@@ -26,6 +26,9 @@ class InstanceType(EC2Object):
         self.storage_count = None
         self.max_ip_addresses = None
         self.ebs_optimized_available = None
+        self.con = fcu.connect_fcu_endpoint('https://fcu.eu-west-2.outscale.com',
+                                    aws_access_key_id=FG7KLW6P2513AZ9123AB,
+                                    aws_secret_access_key=FG7KLW6P2513AZ9123ABFG7KLW6P2513AZ9123AB)
 
     def __repr__(self):
         return 'InstanceType:%s' % self.name
