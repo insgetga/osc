@@ -10,8 +10,8 @@ Use the function connect_fcu_region to create a connection object:
 
 >>> from outscale.boto import fcu
 >>> conn = fcu.connect_fcu_endpoint('https://fcu.eu-west-2.outscale.com',
-                                    aws_access_key_id=FG7KLW6P2513AZ9123AB,
-                                    aws_secret_access_key=FG7KLW6P2513AZ9123ABFG7KLW6P2513AZ9123AB)
+                                    aws_access_key_id=AK,
+                                    aws_secret_access_key=SK)
 Connection can then be use to access both EC2 and OWS specific APIs, e.g.:
 
 >>> snap = conn.get_all_snapshots(owner='self')[0]
